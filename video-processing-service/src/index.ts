@@ -4,7 +4,7 @@ import ffmpegInstaller from '@ffmpeg-installer/ffmpeg';
 
 const app = express();
 app.use(express.json());
-
+ffmpeg.setFfmpegPath(ffmpegInstaller.path);
 
 app.post("/process-video", (req, res) => {
     // Get path of the input video file from the request body
