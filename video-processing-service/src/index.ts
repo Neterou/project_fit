@@ -1,10 +1,9 @@
 import express from "express";
 import ffmpeg from "fluent-ffmpeg";
-import ffmpegInstaller from '@ffmpeg-installer/ffmpeg';
 
 const app = express();
 app.use(express.json());
-ffmpeg.setFfmpegPath(ffmpegInstaller.path);
+
 
 app.post("/process-video", (req, res) => {
     // Get path of the input video file from the request body
@@ -23,7 +22,7 @@ app.post("/process-video", (req, res) => {
         })
         .on("error", (err) =>{
             console.log(`An error occurred: ${err.message}`);
-            res.status(500).send(`Internal Server Error ${err.message}`);
+            res.status(500).send(`Internal Server Error: ${err.message}`);
         })
         .save(outputFilePath);
 });
