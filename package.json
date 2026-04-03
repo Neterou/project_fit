@@ -1,0 +1,19 @@
+{
+  "name": "project-fit",
+  "version": "1.0.0",
+  "description": "Static server for FitInfluence",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix"
+  },
+  "dependencies": {
+    "express": "^4.22.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "oxlint": "^1.58.0"
+  }
+}

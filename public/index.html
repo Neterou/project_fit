@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitInfluence - Fitness Influencer Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 2rem;
+            background: linear-gradient(to bottom, #eef2ff, #f0f9ff);
+            color: #1e3a8a;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            color: #1e3a8a;
+            margin-bottom: 1.5rem;
+        }
+        .btn {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0.5rem;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #2563eb;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .feature {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .feature h3 {
+            color: #1e3a8a;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FitInfluence</h1>
+        <p>Where fitness influencers share their expertise</p>
+        
+        <a href="/login" class="btn">Login</a>
+        <a href="/register" class="btn">Sign Up</a>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>For Influencers</h3>
+                <p>Monetize your fitness expertise through subscription tiers</p>
+            </div>
+            <div class="feature">
+                <h3>For Subscribers</h3>
+                <p>Access exclusive fitness content and live sessions</p>
+            </div>
+            <div class="feature">
+                <h3>Community Features</h3>
+                <p>Ask questions, join live workouts, connect with fitness enthusiasts</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
